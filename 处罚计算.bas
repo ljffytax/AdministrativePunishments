@@ -867,7 +867,7 @@ Function addMoney() As Integer
     total = 0
     iRow = 11
     Do While (ThisWorkbook.Sheets(1).Cells(iRow, 1) <> "合计罚款金额")
-        If ((ThisWorkbook.Sheets(1).Cells(iRow, 4) = 0 Or ThisWorkbook.Sheets(1).Cells(iRow, 4) = "首违") And ThisWorkbook.Sheets(1).Cells(iRow, 4) <> "") Then '傻逼领导要改
+        If ((ThisWorkbook.Sheets(1).Cells(iRow, 4) = 0 Or ThisWorkbook.Sheets(1).Cells(iRow, 4) = "首违") And ThisWorkbook.Sheets(1).Cells(iRow, 4) <> "") Then
             ThisWorkbook.Sheets(1).Cells(iRow, 4) = "首违"
         Else
             total = total + ThisWorkbook.Sheets(1).Cells(iRow, 4)
